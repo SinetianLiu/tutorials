@@ -15,8 +15,6 @@
 ### 2、『Ubuntu』好用吗？
 
 可以说既好用又不好用。好用之处在于，它的操作逻辑接近于主流的Windows、macOS，并且也支持Office文档等；但是你必须知道的是，在使用『Ubuntu』时，你可能会经常性的跟一个『终端』打交道。这对电脑小白、用惯了Windows的人极其不友好。
-给一张截图。
-![Ubuntu下的VSCode。](https://github.com/SinetianLiu/tutorials/blob/main/UTG/1.png)
 
 ### 3、『Ubuntu』是英文的吗？
 
