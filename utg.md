@@ -1,12 +1,10 @@
 # Ubuntu To Go教程
 
----
-
-声明：本教程并不是一个教你如何在电脑上安装Ubuntu的教程。它将要教会你的是，如何在一个U盘上安装一个**完整的、独立于其他系统运行的**Ubuntu。
-
-建议先按下Ctrl+P（Windows、Linux）或Command+P（macOS）打印本页。
-
----
+> 声明：本教程并不是一个教你如何在电脑上安装Ubuntu的教程。它将要教会你的是，如何在一个U盘上安装一个**完整的、独立于其他系统运行的**Ubuntu。
+>
+> 建议先按下Ctrl+P（Windows、Linux）或Command+P（macOS）打印本页。
+>
+> 感谢[CSDN博主图片](https://blog.csdn.net/Guzarish/article/details/135205790)。
 
 ## 一、概述
 
@@ -30,12 +28,10 @@
 
 一点也不。
 
-
-
 ## 二、材料用具
 
 - 两个容量差异较大的（例，32GB+64GB）、支持USB3.0的U盘。（关于USB3.0的辨认方法，请参考文末FAQ模块）
-- 一台支持UEFI启动的电脑（关于UEFI启动支持的辨认方法，请参照文末FAQ模块）。
+- 一台支持UEFI启动的、联网的电脑（关于UEFI启动支持的辨认方法，请参照文末FAQ模块）。
 
 ## 三、步骤
 
@@ -43,3 +39,68 @@
 
 - 下载[Rufus工具](https://github.com/SinetianLiu/tutorials/releases/download/Rufus4.9/rufus-4.9p.exe)、[Ubuntu最新版（目前为25.04）镜像](https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/25.04/ubuntu-25.04-desktop-amd64.iso)。（tips：点击蓝字，直达下载！）
 
+- 插上你**容量较小的**U盘。
+
+![Rufus](https://i-blog.csdnimg.cn/blog_migrate/2fe6094cac43e91d805a15c2209baaa6.png)
+
+- 打开『Rufus』。如上图，在『设备』下选择你的U盘，『引导类型选择』下选择你的ISO文件，『分区类型』选择GPT，其他别动。
+
+![Rufus2](https://i-blog.csdnimg.cn/blog_migrate/28f30ddea6369c4b62163e212fde0aef.png)
+
+- 开始。
+
+> 如果出现`检测到该镜像为 "ISO Hybrid" 类型，支持 ISO 或 DD 方式写入。推荐方式：Rufus 推荐使用 ISO 镜像模式写入。`，直接无脑确认。
+>
+> 如果出现`本系统使用……，而Rufus不可能全部包含它们，因此……`，直接无脑确认。
+
+到这里就完成了第一步：制作启动盘。
+
+### 2、引导启动
+
+- 把制作好的启动盘插入电脑的**USB3.0**接口。（如果你在用台式机，就插到**后面的**接口。）（关于USB3.0接口的辨认方法，请参考文末FAQ模块。）
+
+- 重启电脑，在出现LOGO时按下BIOS快捷键（多为F1、ESC等，可以自行搜索。）
+
+- 在BIOS设置的『启动』下，**关闭『安全启动』与『快速启动』**。（没有『安全启动』与『快速启动』的话可以跳过此步）
+
+- 退出BIOS设置，等待电脑自动重启。
+
+- 在出现LOGO时，按下更改启动设备快捷键（多为F12、Enter等，可以自行搜索。）
+
+![启动界面](https://i-blog.csdnimg.cn/blog_migrate/737206b22fadd51516e5d0974f0d54aa.png)
+
+- 出现一个类似于上图的界面时，使用上下箭头按键，选择**同时带有『USB』及『UEFI』的一项**。
+
+- 稍候一会儿。
+
+![Start](https://i-blog.csdnimg.cn/blog_migrate/ba4bf00e910281a3bfb43cb794db1b2e.png)
+
+- 当出现如上图界面时，说明引导启动成功。
+
+- 按下Enter进入安装进程。
+
+到这里就完成了第二步：引导启动。
+
+### 3、安装
+
+![install](https://i-blog.csdnimg.cn/blog_migrate/42adcb9374db647811cfe4545f28e558.png)
+
+- 出现类似于上图的界面时（实际会略有不同），说明已经成功启动安装。
+
+- 安装进程的前几步按照提示来就好，这里重点讲解4个步骤。
+
+![sel](https://i-blog.csdnimg.cn/blog_migrate/ad5879b5e120d8e7f43963b4e1e2acec.png)
+
+- 如上图，这个地方选择『安装Ubuntu』。
+
+- 『网络连接』界面建议联网。
+
+- 当出现『专有程序』界面（该界面上有`Ubuntu默认不包含专有程序……`等说明），把两个选项全部钩上，继续。
+
+- **接下来便是最重要的『分区』环节了。**
+
+![alt text](https://i-blog.csdnimg.cn/direct/d602f4f287f8404a8060ea0b1f59df68.png)
+
+- 如上图，选择『手动分区』。
+
+![partition](https://i-blog.csdnimg.cn/direct/422fb1530e444c1a9a71bc058c796658.png)
