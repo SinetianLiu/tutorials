@@ -37,7 +37,7 @@
 
 ### 1、制作启动盘
 
-- 下载[Rufus工具](https://github.com/SinetianLiu/tutorials/releases/download/Rufus4.9/rufus-4.9p.exe)、[Ubuntu最新版（目前为25.04）镜像](https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/25.04/ubuntu-25.04-desktop-amd64.iso)。（tips：点击蓝字，直达下载！）
+- 下载[Rufus工具](https://github.com/pbatard/rufus/releases/download/v4.9/rufus-4.9p.exe)（MD5：e88a8aaa069b9b4c44a416fa7cd071f1）、[Ubuntu最新版（目前为25.04）镜像](https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/25.04/ubuntu-25.04-desktop-amd64.iso)。（tips：点击蓝字，直达下载！）
 
 - 插上你**容量较小的**U盘。
 
