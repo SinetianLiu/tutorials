@@ -7,3 +7,4 @@
 这是一个乱七八糟的数码教程。（上次更新于250807）
 
 1. [Ubuntu To Go](https://sinetianliu.github.io/tutorials/utg)
+2. [在Ubuntu上配置ssh](https://sinetianliu.github.io/tutorials/ssh@ubuntu)
