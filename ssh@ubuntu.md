@@ -85,3 +85,23 @@ ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJGAJjMFzGzbhyRAX+2c9hngC8pBTU90QZa9xLLcM4KI
 
 ### 开始推送
 
+- **打开终端**，切换到你的工作目录。（这一步是必须的。）
+
+- 执行`git push`命令，系统输出：
+
+```text
+The authenticity of host 'github.com (*.*.*.*)' can't be established.
+ED25519 key fingerprint is ******.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? 
+```
+
+- 这时你可以输入`yes`来接受并信任该主机的指纹，或者将实际的指纹值粘贴到提示处进行验证（推荐先核对指纹是否与[GitHub官方公布的一致](https://docs.github.com/zh/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints)）。
+
+- 系统输出：
+
+```text
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+```
+
+Git就会继续推送了。
