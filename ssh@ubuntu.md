@@ -1,6 +1,6 @@
 # 在Ubuntu环境下配置git仓库
 
-## 一、概述
+## 一、前言
 
 鉴于Ubuntu上没有比较好用的GitCredentialManager，我决定改用SSH连接GitHub。
 
@@ -19,6 +19,8 @@
 ssh-keygen -t ed25519 -C "<你注册GitHub使用的邮箱>"
 ```
 
+> 冷知识：上述代码中，`-C "<你注册GitHub使用的邮箱>"`其实是不必须的。
+
 - 此时系统会询问文件保存位置：
 
 ``` text
@@ -31,6 +33,7 @@ ssh-keygen -t ed25519 -C "<你注册GitHub使用的邮箱>"
 
 ```text
 > Enter passphrase (empty for no passphrase): [Type a passphrase]
+
 > Enter same passphrase again: [Type passphrase again]
 ```
 
@@ -58,13 +61,14 @@ ssh-add ~/.ssh/id_ed25519
 
 ```bash
 cd ~/.ssh
+
 cat id_ed25519.pub
 ```
 
-- 系统输出：
+- 系统输出（以我自己的公钥为例）：
 
 ```text
-ssh-ed25519 **************************************************** **************@outlook.com
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJGAJjMFzGzbhyRAX+2c9hngC8pBTU90QZa9xLLcM4KI liujingyu2020@outlook.com
 ```
 
 - 复制这几行（选中|右键|复制）。
@@ -78,3 +82,6 @@ ssh-ed25519 **************************************************** **************@
 - 点击绿色按钮，确认。
 
 - 完成！
+
+### 开始推送
+
