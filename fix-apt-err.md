@@ -21,11 +21,11 @@
 
 1. 先试了一下
 
-```bash
-aptitude safe-upgrade
-```
+    ```bash
+    aptitude safe-upgrade
+    ```
 
-结果提示没更新（~~玩我呢~~），失败。
+    结果提示没更新（~~玩我呢~~），失败。
 
 2. 于是执行了
 
