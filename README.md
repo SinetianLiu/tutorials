@@ -4,6 +4,15 @@
 >
 > 注意：镜像站更新较慢。
 
+<div id="poem"></div>
+<script>
+  fetch('https://v1.jinrishici.com/all.json')
+    .then(r => r.json())
+    .then(d => {
+      document.getElementById('poem').textContent = d.content + ' —— ' + d.author + '《' + d.origin + '》';
+    });
+</script>
+
 这是一个乱七八糟的数码教程。（上次更新于250814）
 
 1. [Ubuntu To Go](https://sinetianliu.github.io/tutorials/utg)
